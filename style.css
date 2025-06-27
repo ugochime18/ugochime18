@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+  }
+  .container { 
+     width:100%;
+     min-height: 100vh;
+     background: rgb(255, 255, 255);
+     padding: 10px;
+     
+  }
+  .todo-web {
+    width: 100%;
+    max-width: 540px;
+    background: rgb(255, 157, 0);
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    box-shadow: 0  4px 12px rgba(0, 0, 0, 0.605);
+  }
+  .todo-web h2 {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+  }
+  
+  .todo-web h2 img{
+    width: 50px;
+    margin-left:20px ;
+    box-shadow: 0  4px 12px rgba(0, 0, 0, 0.605);
+  }
+  .row { 
+    display: flex;
+    align-items: right;
+    justify-content: space-between;
+    padding-left: 20px ;
+  }
+  
+  input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: white;
+    padding: 17px;
+    border-radius: 30px;
+    width: 70%;
+  }
+  
+  button {
+    border: none;
+    outline: none;
+    padding: 17px 50px;
+    background:rgb(255, 255, 255) ;
+    color: black;
+     font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+    box-shadow: 0  4px 12px rgba(0, 0, 0, 0.605);
+  }
+  button:hover{
+    background: transparent;
+  }
+  
+  #input-box,#due-date{
+    display: inline;
+    margin-top: 10px;
+  }
+    
+  
+  .filter-section{
+    text-align: right;
+    margin-top: 2rem;
+    font-size: 15;
+    font-weight: bold;
+    padding: 10px;
+    
+  }
+  
+  ul {
+    list-style: none;
+    padding: 10px;
+  }
+  
+  .task{
+  background:rgb(255, 255, 255);
+  margin-bottom: 5px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 10PX;
+  border-radius: 20px;
+  text-align: left;
+  font-size:16px;
+  box-sizing: border-box;
+  }
+  
+  .task.completed{
+    align-items: center;
+    text-decoration: line-through;
+    color: gray;
+    border-left-color:#6c757d;
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+  }
+  
+  li {
+    display: flex;
+    align-items: center;
+    margin: 5px 10px;
+  }
+  li input[type="checkbox"] {
+    margin: 30px;
+    padding: 0px;
+    justify-content: space-between;
+  
+  }
+  li button {
+    margin-right: 5px;
+  } 
+  
+  .task.due{
+    font-size: 14px;
+    color: gray;
+    margin-right: 20px;
+  
+  }
+  .task button{ 
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: white;
+    background: #dc3545;
+    margin-left: 10px;
+    font-size: 14px;
+  }
+  
+  .task button:hover{
+    background: #c82333; 
+  }
